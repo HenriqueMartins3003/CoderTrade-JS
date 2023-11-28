@@ -18,6 +18,9 @@
     height: 30px;
     margin-top: 50px;
   }
+  .menu-listas {
+    margin-top: 35px;
+  }
 
   .lista {
     color: black;
@@ -50,12 +53,17 @@
     margin: 10px;
   }
 }
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
 @layer botao {
   .botao {
     color: black;
     background-color: #ffd230;
-    border: none;
-    border-radius: 10px;
+    border: #ffd230 solid;
+    border-radius: 150px;
     padding: 10px;
     margin: 5px;
     font-weight: bold;
@@ -68,8 +76,12 @@
   }
 }
 
+.icon_moeda {
+  width: 50px;
+  height: 50px;
+}
 
-.icon_moeda{
+.icone-troca {
   width: 50px;
   height: 50px;
 }
