@@ -76,12 +76,63 @@ a:link {
   }
 }
 
-.icon_moeda {
-  width: 50px;
-  height: 50px;
-}
 
-.icone-troca {
-  width: 50px;
-  height: 50px;
+@layer lista_criptomoedas{
+  .icon_moeda {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .icone-troca {
+    width: 50px;
+    height: 50px;
+  }
+
+  #tabela_{
+    width: 97%;
+    margin: auto;
+    text-align: center;
+  }
+   
+  #tabela_ td{
+    padding: 5px;   
+  }
+  
+  .marcacao:hover{
+    background-color: #ffd230;
+    cursor: pointer;
+    width: 50%;
+  }
+
+  .grafico_BTC,.grafico_ETH, .grafico_LIT, .grafico_TRON {
+    height: 100px;  
+    display: none;
+  }
+
+  .botao_mais{
+    background-color: #f3da83;
+    border: none;
+    width: 50px;
+    font-weight: bold;
+  }
+  
+  .outras_info{
+   height: 100px ;
+   display: flex;
+   flex-flow: column wrap;
+   justify-content: space-between;
+   padding: 10px;
+   background: #ffd2304e;
+
+  }
+
+  .infos{
+    border-bottom: 1px solid rgb(0, 38, 255);
+    width: 350px;
+    height: 25px;
+  }
+  
 }
+   
+
+

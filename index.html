@@ -88,48 +88,136 @@
           Uma seleção de outras conversões populares de Bitcoin para diversas
           moedas correntes.
         </span>
+          
         <article>
-          <table class="table table-light">
-            <th>icone</th>
+          <table id="tabela_">  
+            
+            <tr class="none">
+              <th></th> 
+              <th>icone</th>
               <th>Nome</th>
-              <th>Price</th>
-              <th>Market Cap</th>
+              <th>Price USD</th> 
+              <th>Market Cap USD</th>
             </tr>
 
+            <tr class="none">
+              <th><hr></th>
+              <th><hr></th>
+              <th><hr></th>
+              <th><hr></th> 
+              <th><hr></th>
+            </tr>
 
-            <tr>
-              <td><img src="img/btc-logo.png" alt="" class="icon_moeda"></td>
+            <tr class="marcacao" >
+               
+              <td><input type="button" value="+" class="botao_mais mais_BTC" ></td>
+              <td><img src="img/btc-logo.png" alt="Bitcoin" class="icon_moeda"></td>
               <td>Bitcoin</td>
               <td id="price_BTC"></td>
               <td id="cap_BTC"></td>
             </tr>
+            
+                  <tr >
+                    <td colspan="5" >
+                      <div class="grafico_BTC">
+                        <div class="outras_info">
+                          <table id="tabela_">  
+                            <tr>
+                              <th class="infos"><strong>supply:</strong><span id="supply_btc"></span></th>
+                              <th class="infos"><strong>maxSupply:</strong><span id="maxSupply_btc"></span></th>
+                              <th class="infos"><strong>volumeUsd24Hr:</strong><span id="volumeUsd24Hr_btc"></th>
+                              <th class="infos"><strong>changePercent24Hr:</strong><span id="changePercent24Hr_btc"></th> 
+                              <th class="infos"><strong>vwap24Hr:</strong><span id="vwap24Hr_btc"></span></th>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
 
-            <tr>
-              <td><img src="img/ETH-icon.png" alt="" class="icon_moeda"></td>
+                  
+            
+            <tr class="marcacao">
+              <td><input type="button" value="+" class="botao_mais mais_ETH" ></td>
+              <td><img src="img/ETH-icon.png" alt="Ethereum" class="icon_moeda"></td>
               <td>Ethereum</td>
               <td id="price_ETH"></td>
               <td id="cap_ETH"></td>
             </tr>
 
-            <tr>
-              <td ><img src="img/Litecoin-icone_2.PNG" alt="" class="icon_moeda"></td>
+                <tr >
+                  <td colspan="5" >
+                    <div class="grafico_ETH">
+                      <div class="outras_info">
+                        <table id="tabela_">  
+                          <tr>
+                            <th class="infos"><strong>supply:</strong><span id="supply_ETH"></span></th>
+                            <th class="infos"><strong>maxSupply:</strong><span id="maxSupply_ETH"></span></th>
+                            <th class="infos"><strong>volumeUsd24Hr:</strong><span id="volumeUsd24Hr_ETH"></th>
+                            <th class="infos"><strong>changePercent24Hr:</strong><span id="changePercent24Hr_ETH"></th> 
+                            <th class="infos"><strong>vwap24Hr:</strong><span id="vwap24Hr_ETH"></span></th>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+            <tr class="marcacao">
+              <td><input type="button" value="+" class="botao_mais mais_LIT" ></td>
+              <td ><img src="img/Litecoin-icone_2.PNG" alt="Litecoin" class="icon_moeda"></td>
               <td>Litecoin</td>
               <td id="price_Lit"></td>
               <td id="cap_Lit"></td>
             </tr>
 
-            <tr>
-              <td><img src="img/Tron-icon.PNG" alt="" class="icon_moeda"></td>
+                  <tr >
+                    <td colspan="5" >
+                      <div class="grafico_LIT">
+                        <div class="outras_info">
+                          <table id="tabela_">  
+                            <tr>
+                              <th class="infos"><strong>supply:</strong><span id="supply_LIT"></span></th>
+                              <th class="infos"><strong>maxSupply:</strong><span id="maxSupply_LIT"></span></th>
+                              <th class="infos"><strong>volumeUsd24Hr:</strong><span id="volumeUsd24Hr_LIT"></th>
+                              <th class="infos"><strong>changePercent24Hr:</strong><span id="changePercent24Hr_LIT"></th> 
+                              <th class="infos"><strong>vwap24Hr:</strong><span id="vwap24Hr_LIT"></span></th>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+    
+            <tr class="marcacao">
+              <td><input type="button" value="+" class="botao_mais mais_TRON"></td>
+              <td><img src="img/Tron-icon.PNG" alt="Tron" class="icon_moeda"></td>
               <td>Tron</td>
               <td id="price_tron"></td>
               <td id="cap_tron"></td>
             </tr>
 
-              
+                  <tr>
+                    <td colspan="5" >
+                      <div class="grafico_TRON">
+                        <div class="outras_info">
+                          <table id="tabela_">  
+                            <tr>
+                              <th class="infos"><strong>supply:</strong><span id="supply_TRON"></span></th>
+                              <th class="infos"><strong>maxSupply:</strong><span id="maxSupply_TRON"></span></th>
+                              <th class="infos"><strong>volumeUsd24Hr:</strong><span id="volumeUsd24Hr_TRON"></th>
+                              <th class="infos"><strong>changePercent24Hr:</strong><span id="changePercent24Hr_TRON"></th> 
+                              <th class="infos"><strong>vwap24Hr:</strong><span id="vwap24Hr_TRON"></span></th>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
           </table>
         </article>
       </section>
     </div>
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
   </body>
 </html>
