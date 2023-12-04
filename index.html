@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/icone.PNG" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/icone.PNG" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -25,50 +25,59 @@
   </head>
   <body>
     <div class="container-fluid">
-      <nav class=" navbar-expand-lg navbar-light navegacao ">
-        <div id="area_logo"><img src="img/logo_final.png" alt="Logo coderTrade"></div>
-        <ul id="menu">
-          <li class="lista">Opção 1</li>
-          <li class="lista">Opção 2</li>
-          <li class="lista">Opção 3</li>
-          <li class="lista">Opção 4</li>
-        </ul>
+      <nav class="navbar-expand-lg navbar-light navegacao">
+        <div id="area_logo">
+          <img src="img/logo_final.png" alt="Logo coderTrade" />
+        </div>
+        <div class="my-auto">
+          <ul id="menu">
+            <li class="lista" id="Lista1" data-currency="BTC">Bitcoin </li>
+            <li class="lista" id="Lista2" data-currency="ETH">Ethereum</li>
+            <li class="lista" id="Lista3" data-currency="LTC">Litecoin</li>
+            <li class="lista" id="Lista4" data-currency="TRX">Tron</li>
+          </ul>
+      </div>
       </nav>
 
       <section class="container-fluid">
         <h1>Calculadora de Cripto Moedas</h1>
-        <span>
-          bitcoin é a atual Cripto moeda com maior liquidez do mercado
-        </span>
-
+        
         <main>
-          <button class="botao">
-            <a href="https://www.binance.com/pt-BR"></a>Comprar Bitcoin
+          
+          <span>
+            bitcoin é a atual Cripto moeda com maior liquidez do mercado
+          </span>        
+          
+          <button class="btn btn-warning">
+            <a href="https://www.binance.com/pt-BR">Comprar Bitcoin</a>
           </button>
+          
           <div class="d-flex mb-3 p-2">
-            <input type="text" name="" id="" class="form-control" />
-            <select name="" id="" class="form-select">
-              <option value="">USD</option>
-              <option value="">ALL</option>
-              <option value="">AFN</option>
-              <option value="">AMD</option>
-              <option value="">AUD</option>
-              <option value="">BRL</option>
-              <option value="">ARS</option>
+           
+            <input type="text" name="coinPrice" id="coinPrice" class="form-control" value="0"/>
+           
+            <select name="coinSelect" id="coinSelect" class="form-select">
+              <option value="USD">USD</option>
+              <option value="ALL">ALL</option>
+              <option value="AFN">AFN</option>
+              <option value="AMD">AMD</option>
+              <option value="AUD">AUD</option>
+              <option value="BRL">BRL</option>
+              <option value="ARS">ARS</option>
             </select>
+            
+              <button class="botao" onclick=(handleclickExchange())><img src="img/icone-troca-moedas.png" alt="icone de troca" class="img-fluid"></button>
+            
+            <input type="text" name="criptoPrice" id="criptoPrice" value="0" class="form-control"/>
 
-            <button class="botao">Icone troca</button>
-
-            <input type="text" name="" id="" class="form-control" />
-
-            <select name="" id="" class="form-select">
-              <option value="">BTC</option>
-              <option value="">ETH</option>
-              <option value="">USDT</option>
-              <option value="">BNB</option>
-              <option value="">XRP</option>
-              <option value="">SOL</option>
-              <option value="">ADA</option>
+            <select name="criptoSelect" id="criptoSelect" class="form-select">
+              <option value="BTC">BTC</option>
+              <option value="ETH">ETH</option>
+              <option value="TRX">TRX</option>
+              <option value="LTC">LTC</option>
+              <option value="XRP">XRP</option>
+              <option value="SOL">SOL</option>
+              <option value="ADA">ADA</option>
             </select>
           </div>
         </main>
@@ -81,38 +90,42 @@
         </span>
         <article>
           <table class="table table-light">
-            <tr>
-              <td>345</td>
-              <td>643</td>
+            <th>icone</th>
+              <th>Nome</th>
+              <th>Price</th>
+              <th>Market Cap</th>
             </tr>
+
+
             <tr>
-              <td>345</td>
-              <td>643</td>
+              <td><img src="img/btc-logo.png" alt="" class="icon_moeda"></td>
+              <td>Bitcoin</td>
+              <td id="price_BTC"></td>
+              <td id="cap_BTC"></td>
             </tr>
+
             <tr>
-              <td>345</td>
-              <td>643</td>
+              <td><img src="img/ETH-icon.png" alt="" class="icon_moeda"></td>
+              <td>Ethereum</td>
+              <td id="price_ETH"></td>
+              <td id="cap_ETH"></td>
             </tr>
+
             <tr>
-              <td>345</td>
-              <td>643</td>
+              <td ><img src="img/Litecoin-icone_2.PNG" alt="" class="icon_moeda"></td>
+              <td>Litecoin</td>
+              <td id="price_Lit"></td>
+              <td id="cap_Lit"></td>
             </tr>
+
             <tr>
-              <td>345</td>
-              <td>643</td>
+              <td><img src="img/Tron-icon.PNG" alt="" class="icon_moeda"></td>
+              <td>Tron</td>
+              <td id="price_tron"></td>
+              <td id="cap_tron"></td>
             </tr>
-            <tr>
-              <td>345</td>
-              <td>643</td>
-            </tr>
-            <tr>
-              <td>345</td>
-              <td>643</td>
-            </tr>
-            <tr>
-              <td>345</td>
-              <td>643</td>
-            </tr>
+
+              
           </table>
         </article>
       </section>
