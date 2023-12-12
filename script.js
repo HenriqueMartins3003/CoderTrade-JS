@@ -11,40 +11,34 @@ const trxElement = document
   .getElementById("Lista4")
   .getAttribute("data-currency");
 
-// const getCriptoPrices = async (cripto) => {
-//   const response = await fetch("https://api.coincap.io/v2/assets");
-
-//   const data = await response.json();
-//   const price = data.data;
-
-//   const currency = price.find((item) => item.symbol == cripto);
-//   //console.log(currency);
-//   //console.log(currency.priceUsd);
-//   return currency.priceUsd;
-// };
-
-// const handleclickExchange = async () => {
-//   const screenCurrency = document.getElementById("criptoPrice");
-//   const cripto = await getCriptoPrices(ethElement);
-//   console.log(`Cripto: ${cripto} Screen: ${screenCurrency}`);
-//   screenCurrency.innerHTML = `jkcjsdklvj;kvopf`;
-// };
-
-const getCriptoPrices = async () => {
+const getCriptoPrices = async (cripto, coin) => {
   const response = await fetch(
-    `https://api.coinbase.com/v2/exchange-rates/?currency=ETH`
+    `https://api.coinbase.com/v2/prices/${coin}-${cripto}/sell`
   );
 
   const data = await response.json();
 
-  console.log(data.data.rates);
+  // console.log(data.data.amount);
+
+  return data.data.amount;
 };
 
 const handleclickExchange = async () => {
-  const screenCurrency = document.getElementById("criptoPrice");
-  const cripto = await getCriptoPrices();
-  console.log(`Cripto: ${cripto} Screen: ${screenCurrency}`);
-  screenCurrency.value = Math.floor(cripto);
+  const criptoScreen = document.getElementById("criptoSelect").value;
+  const coinScreen = document.getElementById("coinSelect").value;
+  const coinPrice = document.getElementById("coinPrice");
+  const criptoPrice = document.getElementById("criptoPrice");
+
+  const criptoAmount = await getCriptoPrices(criptoScreen, coinScreen);
+
+  // console.log(`Cripto: ${criptoAmount} Screen: ${criptoScreen}`);
+
+  if (coinPrice.value == 0 || coinPrice.value == 1) {
+    coinPrice.value = 1;
+    criptoPrice.value = parseFloat(criptoAmount).toFixed[7];
+  } else {
+    criptoPrice.value = parseFloat(coinPrice.value * criptoAmount).toFixed[7];
+  }
 };
 
 ///// inicio area - Lista de Criptos
