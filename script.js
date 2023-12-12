@@ -35,9 +35,9 @@ const handleclickExchange = async () => {
 
   if (coinPrice.value == 0 || coinPrice.value == 1) {
     coinPrice.value = 1;
-    criptoPrice.value = parseFloat(criptoAmount).toFixed[7];
+    criptoPrice.value = parseFloat(criptoAmount).toFixed(7);
   } else {
-    criptoPrice.value = parseFloat(coinPrice.value * criptoAmount).toFixed[7];
+    criptoPrice.value = parseFloat(coinPrice.value * criptoAmount).toFixed(7);
   }
 };
 
