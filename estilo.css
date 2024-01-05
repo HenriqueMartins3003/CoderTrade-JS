@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(img/dolar2.jpg);
+    background-attachment: fixed;
+    position: relative;
+        
+}
+
+
+
+#AreaLogo{
+    text-align: center;   
+}
+
+#logo{
+    width:620px ;
+    height:300px;
+    margin-top:20px;
+}
+
+#area{
+    text-align: center;
+    background-color: #660a03dd;
+    color: #e77e23;
+    width: 100%;
+    margin: auto;
+}
+
+#AreaCalculo{
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    
+    
+
+}
+
+#infos{
+    
+    margin: auto;
+    width: 80%;
+    height: 300px;
+    margin-top: 30px;
+    color: #660a03;
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
+#separador{
+    height: 40px;
+    background-color: #660a03dd;
+}
+
+#button{
+    width: 300px;
+    height: 50px;
+    border-radius: 30px;
+    color: #e77e23;
+    background-color: #660a03dd;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+#button:hover{
+    background-color: #e77e23;
+    color: #660a03dd;
+
+}
+
+#AreaResultado{
+    overflow: hidden;
+    overflow-y: scroll;
+    max-height: 500px;
+    max-width: 95%;
+}
+#AreaResultado, h3{
+    color: #660a03dd;
+}
+th{
+    border: 1px solid #e77e23;
+    padding: 4px;
+    background-color: #660a03dd;
+    color: #e77e23;
+  }
+
+  table{
+    margin: auto;
+    margin-top: 20px;
+    width: 90%;
+    
+  }
+
+  td{
+    border: 1px solid #e77e23;
+    color: #e77e23;
+    font-weight: bold;
+    background-color: #660a03b4;
+    z-index: 2;
+  }
+ 
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #660a03dd;
+    
+    
+    
+    
+    
+}
+
+footer p{
+    margin-top: 10px;
+    padding-top: 30px;
+    font-weight: 200;
+    color: #e77e23;
+     
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
