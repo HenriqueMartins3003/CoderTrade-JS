@@ -82,8 +82,7 @@ a:link {
     text-align: left;
     margin: auto;
     width: 98%;
-    background: #f7f5f0;
-    
+    background: #f1f0ef;
   }
 
   #indicadores p{
@@ -153,8 +152,7 @@ footer{
   background: #ffd230;
   text-align: center;
   font-weight: bold;
-  padding-top: 40px;
-  
+  padding-top: 40px; 
 }
 
 @layer lista_dos_icones_Criptomoedas{
