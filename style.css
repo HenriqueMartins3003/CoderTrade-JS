@@ -2,6 +2,11 @@
   * {
     margin: 0;
     padding: 0;
+    
+  }
+
+  body{
+    min-width: 1000px;
   }
 }
 
@@ -22,21 +27,8 @@
     margin-top: 35px;
   }
 
-  .lista {
-    color: black;
-    background-color: #ffd230;
-    border-radius: 10px;
-    text-align: center;
-    font-weight: bold;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
-  .lista:hover {
-    color: #ffd230;
-    background-color: rgb(7, 11, 11);
-    cursor: pointer;
-  }
+ 
+  
 
   #area_logo,
   img {
@@ -83,26 +75,15 @@ a:link {
     margin: auto;
     width: 98%;
     background: #f1f0ef;
-  }
-
-  #indicadores p{
     font-weight: bold;
-    text-align: center;
-    display:inline-block;
+    display: flex;
   }
 
-  .cl0{
-    width: 17%;
+  #indicadores div{
+    width: 24.5%;
+    
   }
 
-  .cl{
-    width: 20%;
-    margin-right: 15%;
-  }
-
-  .c3{
-    margin-left: 16%;
-  }
 
  #conteiner {
   margin: auto;
@@ -118,9 +99,22 @@ a:link {
     min-width: 800px;
     width: 97%;
     margin: auto;
-    text-align: center;
+    
     
   }
+  .estilo_td{
+    text-transform: capitalize;
+    width: 24%;
+    
+    
+  }
+
+  .estilo_td2{
+    width: 11%;
+    text-align: center;
+  }
+
+   
 
   #tabela_lista tr:hover{
     background-color: #ffd230;
@@ -144,6 +138,8 @@ a:link {
   background: #b8951611;
   font-weight: bold;
   color: black; 
+  text-align: center;
+  text-transform: capitalize;
 }
 
 footer{
@@ -158,107 +154,110 @@ footer{
 @layer lista_dos_icones_Criptomoedas{
    .storj{background-image: url(./icones_cripto/storj.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
    .bitcoin{background-image: url(./icones_cripto/bitcoin.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
-   .ethereum{background-image: url(./icones_cripto/ethereum.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .tether{background-image: url(./icones_cripto/tether.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top; }
-   .binance-coin{background-image: url(./icones_cripto/binance-coin.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .solana{background-image: url(./icones_cripto/solana.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .xrp{background-image: url(./icones_cripto/xrp.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .usd-coin{background-image: url(./icones_cripto/usd-coin.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .cardano{background-image: url(./icones_cripto/cardano.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .avalanche{background-image: url(./icones_cripto/avalanche.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .dogecoin{background-image: url(./icones_cripto/dogecoin.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .polkadot{background-image: url(./icones_cripto/polkadot.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .tron{background-image: url(./icones_cripto/tron.PNG);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .chainlink{background-image: url(./icones_cripto/chainlink.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .polygon{background-image: url(./icones_cripto/polygon.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .wrapped-bitcoin{background-image: url(./icones_cripto/wrapped-bitcoin.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .shiba-inu{background-image: url(./icones_cripto/shiba-inu.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .litecoin{background-image: url(./icones_cripto/litecoin.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .multi-collateral-dai{background-image: url(./icones_cripto/multi-collateral-dai.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .bitcoin-cash{background-image: url(./icones_cripto/bitcoin-cash.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .uniswap{background-image: url(./icones_cripto/uniswap.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .stellar{background-image: url(./icones_cripto/stellar.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .unus-sed-leo{background-image: url(./icones_cripto/unus-sed-leo.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .monero{background-image: url(./icones_cripto/monero.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .ethereum-classic{background-image: url(./icones_cripto/ethereum-classic.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .internet-computer{background-image: url(./icones_cripto/internet-computer.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .cosmos{background-image: url(./icones_cripto/cosmos.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .trueusd{background-image: url(./icones_cripto/trueusd.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .crypto-com-coin{background-image: url(./icones_cripto/crypto-com-coin.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .injective-protocol{background-image: url(./icones_cripto/injective-protocol.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .near-protocol{background-image: url(./icones_cripto/near-protocol.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .bitcoin-bep2{background-image: url(./icones_cripto/bitcoin-bep2.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .filecoin{background-image: url(./icones_cripto/filecoin.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .vechain{background-image: url(./icones_cripto/vechain.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .lido-dao{background-image: url(./icones_cripto/lido-dao.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .thorchain{background-image: url(./icones_cripto/thorchain.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .render-token{background-image: url(./icones_cripto/render-token.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .algorand{background-image: url(./icones_cripto/algorand.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .the-graph{background-image: url(./icones_cripto/the-graph.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .ftx-token{background-image: url(./icones_cripto/ftx-token.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .stacks{background-image: url(./icones_cripto/stacks.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .elrond-egld{background-image: url(./icones_cripto/elrond-egld.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .aave{background-image: url(./icones_cripto/aave.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .quant{background-image: url(./icones_cripto/quant.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .wemix{background-image: url(./icones_cripto/wemix.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .binance-usd{background-image: url(./icones_cripto/binance-usd.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .maker{background-image: url(./icones_cripto/maker.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .hedera-hashgraph{background-image: url(./icones_cripto/hedera-hashgraph.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .fantom{background-image: url(./icones_cripto/fantom.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .flow{background-image: url(./icones_cripto/flow.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .theta{background-image: url(./icones_cripto/theta.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .the-sandbox{background-image: url(./icones_cripto/the-sandbox.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .kucoin-token{background-image: url(./icones_cripto/kucoin-token.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .helium{background-image: url(./icones_cripto/helium.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .synthetix-network-token{background-image: url(./icones_cripto/synthetix-network-token.png);height: 64px;width: 64px;background-position: center top;}
-   .axie-infinity{background-image: url(./icones_cripto/axie-infinity.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .bitcoin-sv{background-image: url(./icones_cripto/bitcoin-sv.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .decentraland{background-image: url(./icones_cripto/decentraland.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .tezos{background-image: url(./icones_cripto/tezos.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .neo{background-image: url(./icones_cripto/neo.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .iota{background-image: url(./icones_cripto/iota.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .eos{background-image: url(./icones_cripto/eos.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .gala{background-image: url(./icones_cripto/gala.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .kava{background-image: url(./icones_cripto/kava.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .klaytn{background-image: url(./icones_cripto/klaytn.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .mina{background-image: url(./icones_cripto/mina.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .frax-share{background-image: url(./icones_cripto/frax-share.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .wootrade{background-image: url(./icones_cripto/wootrade.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .ecash{background-image: url(./icones_cripto/ecash.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .chiliz{background-image: url(./icones_cripto/chiliz.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .conflux-network{background-image: url(./icones_cripto/conflux-network.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .pancakeswap{background-image: url(./icones_cripto/pancakeswap.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .xinfin-network{background-image: url(./icones_cripto/xinfin-network.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .arweave{background-image: url(./icones_cripto/arweave.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .curve-dao-token{background-image: url(./icones_cripto/curve-dao-token.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .aelf{background-image: url(./icones_cripto/aelf.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .gnosis-gno{background-image: url(./icones_cripto/gnosis-gno.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .oasis-network{background-image: url(./icones_cripto/oasis-network.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .rocket-pool{background-image: url(./icones_cripto/rocket-pool.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .fetch{background-image: url(./icones_cripto/fetch.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .dydx{background-image: url(./icones_cripto/dydx.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .zcash{background-image: url(./icones_cripto/zcash.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .casper{background-image: url(./icones_cripto/casper.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .akash-network{background-image: url(./icones_cripto/akash-network.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .trust-wallet-token{background-image: url(./icones_cripto/trust-wallet-token.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .gatetoken{background-image: url(./icones_cripto/gatetoken.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .nexo{background-image: url(./icones_cripto/nexo.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .gas{background-image: url(./icones_cripto/gas.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .huobi-token{background-image: url(./icones_cripto/huobi-token.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .siacoin{background-image: url(./icones_cripto/siacoin.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .o1inch{background-image: url(./icones_cripto/o1inch.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .singularitynet{background-image: url(./icones_cripto/singularitynet.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .zilliqa{background-image: url(./icones_cripto/zilliqa.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .compound{background-image: url(./icones_cripto/compound.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .holo{background-image: url(./icones_cripto/holo.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .dash{background-image: url(./icones_cripto/dash.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .illuvium{background-image: url(./icones_cripto/illuvium.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .paxos-standard{background-image: url(./icones_cripto/quant.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .basic-attention-token{background-image: url(./icones_cripto/basic-attention-token.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .loopring{background-image: url(./icones_cripto/loopring.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .nem{background-image: url(./icones_cripto/nem.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   .fei-protocol{background-image: url(./icones_cripto/fei-protocol.png);height: 64px;width: 64px;background-repeat: no-repeat;background-position: center top;}
-   
+   .ethereum{background-image: url(./icones_cripto/ethereum.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .tether{background-image: url(./icones_cripto/tether.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .binance-coin{background-image: url(./icones_cripto/binance-coin.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .solana{background-image: url(./icones_cripto/solana.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .xrp{background-image: url(./icones_cripto/xrp.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .usd-coin{background-image: url(./icones_cripto/usd-coin.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .cardano{background-image: url(./icones_cripto/cardano.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .avalanche{background-image: url(./icones_cripto/avalanche.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .dogecoin{background-image: url(./icones_cripto/dogecoin.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .polkadot{background-image: url(./icones_cripto/polkadot.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .tron{background-image: url(./icones_cripto/tron.PNG);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .chainlink{background-image: url(./icones_cripto/chainlink.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .polygon{background-image: url(./icones_cripto/polygon.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .wrapped-bitcoin{background-image: url(./icones_cripto/wrapped-bitcoin.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .shiba-inu{background-image: url(./icones_cripto/shiba-inu.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .litecoin{background-image: url(./icones_cripto/litecoin.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .multi-collateral-dai{background-image: url(./icones_cripto/multi-collateral-dai.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .bitcoin-cash{background-image: url(./icones_cripto/bitcoin-cash.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .uniswap{background-image: url(./icones_cripto/uniswap.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .stellar{background-image: url(./icones_cripto/stellar.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .unus-sed-leo{background-image: url(./icones_cripto/unus-sed-leo.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .monero{background-image: url(./icones_cripto/monero.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .ethereum-classic{background-image: url(./icones_cripto/ethereum-classic.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .internet-computer{background-image: url(./icones_cripto/internet-computer.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .cosmos{background-image: url(./icones_cripto/cosmos.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .trueusd{background-image: url(./icones_cripto/trueusd.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .crypto-com-coin{background-image: url(./icones_cripto/crypto-com-coin.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .injective-protocol{background-image: url(./icones_cripto/injective-protocol.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .near-protocol{background-image: url(./icones_cripto/near-protocol.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .bitcoin-bep2{background-image: url(./icones_cripto/bitcoin-bep2.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .filecoin{background-image: url(./icones_cripto/filecoin.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .vechain{background-image: url(./icones_cripto/vechain.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .lido-dao{background-image: url(./icones_cripto/lido-dao.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .thorchain{background-image: url(./icones_cripto/thorchain.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .render-token{background-image: url(./icones_cripto/render-token.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .algorand{background-image: url(./icones_cripto/algorand.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .the-graph{background-image: url(./icones_cripto/the-graph.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .ftx-token{background-image: url(./icones_cripto/ftx-token.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .stacks{background-image: url(./icones_cripto/stacks.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .elrond-egld{background-image: url(./icones_cripto/elrond-egld.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .aave{background-image: url(./icones_cripto/aave.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .quant{background-image: url(./icones_cripto/quant.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .wemix{background-image: url(./icones_cripto/wemix.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .binance-usd{background-image: url(./icones_cripto/binance-usd.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .maker{background-image: url(./icones_cripto/maker.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .hedera-hashgraph{background-image: url(./icones_cripto/hedera-hashgraph.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .fantom{background-image: url(./icones_cripto/fantom.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .flow{background-image: url(./icones_cripto/flow.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .theta{background-image: url(./icones_cripto/theta.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .the-sandbox{background-image: url(./icones_cripto/the-sandbox.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .kucoin-token{background-image: url(./icones_cripto/kucoin-token.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .helium{background-image: url(./icones_cripto/helium.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .synthetix-network-token{background-image: url(./icones_cripto/synthetix-network-token.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .axie-infinity{background-image: url(./icones_cripto/axie-infinity.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .bitcoin-sv{background-image: url(./icones_cripto/bitcoin-sv.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .decentraland{background-image: url(./icones_cripto/decentraland.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .tezos{background-image: url(./icones_cripto/tezos.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .neo{background-image: url(./icones_cripto/neo.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .iota{background-image: url(./icones_cripto/iota.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .eos{background-image: url(./icones_cripto/eos.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .gala{background-image: url(./icones_cripto/gala.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .kava{background-image: url(./icones_cripto/kava.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .klaytn{background-image: url(./icones_cripto/klaytn.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .mina{background-image: url(./icones_cripto/mina.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .frax-share{background-image: url(./icones_cripto/frax-share.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .wootrade{background-image: url(./icones_cripto/Usd-Coin.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .ecash{background-image: url(./icones_cripto/ecash.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .chiliz{background-image: url(./icones_cripto/chiliz.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .conflux-network{background-image: url(./icones_cripto/conflux-network.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .pancakeswap{background-image: url(./icones_cripto/pancakeswap.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .xinfin-network{background-image: url(./icones_cripto/xinfin-network.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .arweave{background-image: url(./icones_cripto/arweave.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .curve-dao-token{background-image: url(./icones_cripto/curve-dao-token.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .aelf{background-image: url(./icones_cripto/aelf.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .gnosis-gno{background-image: url(./icones_cripto/gnosis-gno.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .oasis-network{background-image: url(./icones_cripto/oasis-network.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .rocket-pool{background-image: url(./icones_cripto/rocket-pool.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .fetch{background-image: url(./icones_cripto/fetch.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .dydx{background-image: url(./icones_cripto/dydx.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .zcash{background-image: url(./icones_cripto/zcash.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .casper{background-image: url(./icones_cripto/casper.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .akash-network{background-image: url(./icones_cripto/akash-network.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .trust-wallet-token{background-image: url(./icones_cripto/trust-wallet-token.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .gatetoken{background-image: url(./icones_cripto/gatetoken.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .nexo{background-image: url(./icones_cripto/nexo.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .gas{background-image: url(./icones_cripto/gas.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .huobi-token{background-image: url(./icones_cripto/huobi-token.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .siacoin{background-image: url(./icones_cripto/siacoin.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .o1inch{background-image: url(./icones_cripto/o1inch.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .singularitynet{background-image: url(./icones_cripto/singularitynet.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .zilliqa{background-image: url(./icones_cripto/zilliqa.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .compound{background-image: url(./icones_cripto/compound.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .holo{background-image: url(./icones_cripto/holo.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .dash{background-image: url(./icones_cripto/dash.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .illuvium{background-image: url(./icones_cripto/illuvium.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .paxos-standard{background-image: url(./icones_cripto/quant.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .basic-attention-token{background-image: url(./icones_cripto/basic-attention-token.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .loopring{background-image: url(./icones_cripto/loopring.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .nem{background-image: url(./icones_cripto/nem.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .fei-protocol{background-image: url(./icones_cripto/fei-protocol.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .enjin-coin{background-image: url(./icones_cripto/Enjin-Coin.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .skale-network{background-image: url(./icones_cripto/Skale-Network.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .iotex{background-image: url(./icones_cripto/Iotex.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
+   .celo{background-image: url(./icones_cripto/Celo.png);height: 64px;width: 64px; background-repeat: no-repeat;background-position: center top;}
 }
 
  

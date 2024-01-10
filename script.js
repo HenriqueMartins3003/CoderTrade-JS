@@ -1,15 +1,3 @@
-const btcElement = document
-  .getElementById("Lista1")
-  .getAttribute("data-currency");
-const ethElement = document
-  .getElementById("Lista2")
-  .getAttribute("data-currency");
-const ltcElement = document
-  .getElementById("Lista3")
-  .getAttribute("data-currency");
-const trxElement = document
-  .getElementById("Lista4")
-  .getAttribute("data-currency");
 
 const getCriptoPrices = async (cripto, coin) => {
   const response = await fetch(
@@ -67,6 +55,13 @@ function atualizarTabela() {
                 let nome_td = document.createElement("td");
                 let price_td = document.createElement("td");
                 let market_cap_td = document.createElement("td");
+
+                rank_td.setAttribute("class","estilo_td2");
+                icone_td.setAttribute("class","estilo_td2");
+                nome_td.setAttribute("class","estilo_td");
+                price_td.setAttribute("class","estilo_td");
+                market_cap_td.setAttribute("class","estilo_td");
+
 
               let supply = parseFloat(cripto["supply"]);;
               let volumeUsd24Hr = parseFloat(cripto["volumeUsd24Hr"]);
@@ -220,6 +215,11 @@ function atualizarTabela() {
               else if (nome_cripto === "fei-protocol"){icone_td.setAttribute("class","fei-protocol")} 
               else if (nome_cripto === "siacoin"){icone_td.setAttribute("class","siacoin")} 
               else if (nome_cripto === "loopring"){icone_td.setAttribute("class","loopring")} 
+              else if (nome_cripto === "enjin-coin"){icone_td.setAttribute("class","enjin-coin")} 
+              else if (nome_cripto === "skale-network"){icone_td.setAttribute("class","skale-network")} 
+              else if (nome_cripto === "iotex"){icone_td.setAttribute("class","iotex")} 
+              else if (nome_cripto === "celo"){icone_td.setAttribute("class","celo")}
+              else if (nome_cripto === "wootrade"){icone_td.setAttribute("class","wootrade")} 
           }     
       });
 }
